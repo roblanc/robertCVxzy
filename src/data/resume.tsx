@@ -106,7 +106,7 @@ export const DATA = {
       end: "April 2020",
       description:
         "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-
+    },
   ],
   education: [
     {
@@ -266,7 +266,7 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
-  hackathons: [
+  hackathonsssssssss: [
     {
       title: "Hack Western 5",
       dates: "November 23rd - 25th, 2018",
