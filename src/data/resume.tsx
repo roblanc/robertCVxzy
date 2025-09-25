@@ -126,9 +126,9 @@ export const DATA = {
       end: "2019",
     },
     {
-      school: "Wilfrid Laurier University",
+      school: "University of Bucharest",
       href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
+      degree: "Bachelor's Degree in Applied Modern Languages",
       logoUrl: "/laurier.png",
       start: "2016",
       end: "2021",
