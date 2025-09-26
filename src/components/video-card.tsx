@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Thumbnail from "./VideoCard/Thumbnail";
 import Details from "./VideoCard/Details";
