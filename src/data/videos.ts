@@ -8,4 +8,7 @@ export const VIDEOS = [
   {
     id: "--67klZ-cNI",
   },
+  {
+    id: "dQw4w9WgXcQ",
+  },
 ];
