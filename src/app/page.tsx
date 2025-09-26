@@ -233,9 +233,7 @@ export default function Page() {
                 key={video.id}
                 delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
-                <VideoCard
-                  id={video.id}
-                />
+                <YoutubeEmbed id={video.id} />
               </BlurFade>
             ))}
           </div>
@@ -264,9 +262,7 @@ export default function Page() {
                 key={video.id}
                 delay={BLUR_FADE_DELAY * 16 + id * 0.05}
               >
-                <VideoCard
-                  id={video.id}
-                />
+                <YoutubeEmbed id={video.id} />
               </BlurFade>
             ))}
           </div>
