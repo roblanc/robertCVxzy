@@ -4,9 +4,11 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { VideoCard } from "@/components/video-card";
+import { YoutubeEmbed } from "@/components/youtube-embed";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { VIDEOS } from "@/data/videos";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -262,6 +264,37 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 16 + id * 0.05}
               >
                 <VideoCard
+                  id={video.id}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="youtube-videos">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  I also make videos
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  I also make videos
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I create videos about technology, philosophy, and culture. Here are some of my favorites.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {VIDEOS.map((video, id) => (
+              <BlurFade
+                key={video.id}
+                delay={BLUR_FADE_DELAY * 18 + id * 0.05}
+              >
+                <YoutubeEmbed
                   id={video.id}
                 />
               </BlurFade>
