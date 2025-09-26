@@ -9,7 +9,7 @@ export const DATA = {
   location: "Bucharest, RO",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "I design systems, write essays, and make videos about AI, philosophy, and culture. Driven by curiosity, ownership, and a love for making complex ideas accessible.",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.png",
@@ -120,7 +120,7 @@ export const DATA = {
     },
     {
       school: "University of Bucharest",
-      href: "https://flls.ro",
+      href: "https://lls.unibuc.ro",
       degree: "Bachelor's Degree in Applied Modern Languages",
       logoUrl: "/unibuc.png",
       start: "2016",
