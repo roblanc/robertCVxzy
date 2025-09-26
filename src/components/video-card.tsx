@@ -1,65 +1,54 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { getYoutubeVideoStatistics } from "@/lib/youtube";
-import { EyeIcon } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { useState } from "react";
+import Thumbnail from "./VideoCard/Thumbnail";
+import Details from "./VideoCard/Details";
 
-interface Props {
-  id: string;
+interface VideoCardProps {
+  thumbnailUrl?: string;
+  duration?: string;
+  title?: string;
+  channelName?: string;
+  channelAvatarUrl?: string;
+  views?: string;
+  timestamp?: string;
+  isVerified?: boolean;
+  onClick?: () => void;
 }
 
-export async function VideoCard({ id }: Props) {
-  const video = await getYoutubeVideoStatistics(id);
-
-  if (!video) {
-    return null;
-  }
+const VideoCard = ({
+  thumbnailUrl = "https://dummyimage.com/300x168/000/fff&text=Video+Thumbnail",
+  duration = "12:34",
+  title = "Video Title Goes Here - Amazing Content You Don't Want to Miss",
+  channelName = "Channel Name",
+  channelAvatarUrl = "https://dummyimage.com/36x36/666/fff&text=C",
+  views = "123K views",
+  timestamp = "2 days ago",
+  isVerified = false,
+  onClick = () => {},
+}: VideoCardProps) => {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Card className="flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
-      <Link
-        href={`https://www.youtube.com/watch?v=${id}`}
-        target="_blank"
-        className="block cursor-pointer"
-      >
-        <Image
-          src={video.snippet.thumbnails.maxres?.url || ""}
-          alt={video.snippet.title}
-          width={500}
-          height={300}
-          className="h-40 w-full overflow-hidden object-cover object-top"
-        />
-      </Link>
-      <CardHeader className="px-2">
-        <div className="space-y-1">
-          <CardTitle className="mt-1 text-base truncate">
-            {video.snippet.title}
-          </CardTitle>
-          <p className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert h-12 overflow-hidden">
-            {video.snippet.description}
-          </p>
-        </div>
-      </CardHeader>
-      <CardContent className="mt-auto flex flex-col px-2">
-        <div className="mt-2 flex flex-wrap gap-1">
-          <div className="flex items-center gap-1">
-            <EyeIcon className="size-4" />
-            <span className="text-xs text-muted-foreground">
-              {Intl.NumberFormat("en-US", {
-                notation: "compact",
-                maximumFractionDigits: 1,
-              }).format(video.statistics.viewCount)}
-            </span>
-          </div>
-        </div>
-      </CardContent>
-      <CardFooter className="px-2 pb-2"></CardFooter>
-    </Card>
+    <div
+      className="flex flex-col w-full max-w-[360px] bg-white  overflow-hidden hover:shadow-lg transition-shadow duration-200 cursor-pointer"
+      onClick={onClick}
+    >
+      <Thumbnail
+        thumbnailUrl={thumbnailUrl}
+        duration={duration}
+        onHover={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        isHovered={isHovered}
+      />
+      <Details
+        title={title}
+        channelName={channelName}
+        channelAvatarUrl={channelAvatarUrl}
+        views={views}
+        timestamp={timestamp}
+        isVerified={isVerified}
+      />
+    </div>
   );
-}
+};
+
+export default VideoCard;
