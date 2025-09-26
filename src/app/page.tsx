@@ -54,7 +54,7 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h3 className="text-xl font-bold">About</h3>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -65,7 +65,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h3 className="text-xl font-bold">Work Experience</h3>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -90,7 +90,7 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <h3 className="text-xl font-bold">Education</h3>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -113,7 +113,7 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h3 className="text-xl font-bold">Skills</h3>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
@@ -132,9 +132,9 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   My Projects
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
-                </h2>
+                </h3>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
                   websites to complex web applications. Here are a few of my
@@ -175,9 +175,7 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   My Book Reviews
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I read a lot of books
-                </h2>
+<h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">I read a lot of books</h3>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I enjoy reading books and sharing my thoughts on them. Here are some of my book reviews.
                 </p>
@@ -205,9 +203,7 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   I make video essays
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I make video essays
-                </h2>
+<h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">I make video essays</h3>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I create videos about technology, philosophy, and culture. Here are some of my favorites.
                 </p>
@@ -233,9 +229,9 @@ export default function Page() {
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Get in Touch
-              </h2>
+              </h3>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 <Link
