@@ -3,7 +3,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   // Dummy comment to force recompilation
-  name: "Robert-Daniel Dumitriu",
+  name: "Robert Dumitriu",
   initials: "RDD",
   url: "https://robertcv.xyz",
   location: "Bucharest, RO",
