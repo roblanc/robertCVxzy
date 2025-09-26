@@ -19,12 +19,12 @@ export const DATA = {
     "Typescript",
     "Node.js",
     "Python",
-    "Go",
-    "Postgres",
+    "Javascript",
+    "Postman",
     "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
+    "Illustrator",
+    "Premiere Pro",
+    "Photoshop",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -36,10 +36,10 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/roblanc",
         icon: Icons.github,
 
-        navbar: true,
+        navbar: false,
       },
       LinkedIn: {
         name: "LinkedIn",
@@ -53,11 +53,11 @@ export const DATA = {
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
 
-        navbar: true,
+        navbar: false,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://www.youtube.com/@robertus55/videos",
         icon: Icons.youtube,
         navbar: true,
       },
@@ -110,14 +110,6 @@ export const DATA = {
     },
   ],
   education: [
-    {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
     {
       school: "University of Bucharest",
       href: "https://www.fabiz.ase.ro/",
