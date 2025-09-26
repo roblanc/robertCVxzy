@@ -43,7 +43,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/robert-d-1681a11a7/",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -101,7 +101,7 @@ export const DATA = {
       href: "https://ptc.com/",
       badges: [],
       location: "Bucharest, RO",
-      title: "Software Engineer",
+      title: "Software Marketing Intern",
       logoUrl: "/nvidia.png",
       start: "January 2020",
       end: "April 2020",
@@ -120,7 +120,7 @@ export const DATA = {
     },
     {
       school: "University of Bucharest",
-      href: "https://wlu.ca",
+      href: "https://flls.ro",
       degree: "Bachelor's Degree in Applied Modern Languages",
       logoUrl: "/laurier.png",
       start: "2016",
