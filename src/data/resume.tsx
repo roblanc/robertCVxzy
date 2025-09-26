@@ -253,12 +253,6 @@ export const DATA = {
   ],
   bookReviews: [
     {
-      id: "f1n92gXb60A",
-    },
-    {
-      id: "AYk_sSg_N-U",
-    },
-    {
       id: "hohKcIioi4w",
     },
     {
