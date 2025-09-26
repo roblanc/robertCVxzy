@@ -90,7 +90,7 @@ export const DATA = {
       href: "https://ptc.com",
       location: "Bucharest, RO",
       title: "Software Marketing Global Specialist",
-      logoUrl: "/shopify.svg",
+      logoUrl: "/PTC.svg",
       start: "January 2016",
       end: "April 2020",
       description:
@@ -102,9 +102,9 @@ export const DATA = {
       badges: [],
       location: "Bucharest, RO",
       title: "Software Marketing Intern",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
+      logoUrl: "/PTC.svg",
+      start: "2015",
+      end: "20016",
       description:
         "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
     },
@@ -114,7 +114,7 @@ export const DATA = {
       school: "University of Bucharest",
       href: "https://www.fabiz.ase.ro/",
       degree: "Master's Degree in Business Administration in Foreign Languages",
-      logoUrl: "/waterloo.png",
+      logoUrl: "/unibuc.png",
       start: "2016",
       end: "2019",
     },
@@ -122,17 +122,9 @@ export const DATA = {
       school: "University of Bucharest",
       href: "https://flls.ro",
       degree: "Bachelor's Degree in Applied Modern Languages",
-      logoUrl: "/laurier.png",
+      logoUrl: "/unibuc.png",
       start: "2016",
       end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
     },
   ],
   projects: [
@@ -257,6 +249,22 @@ export const DATA = {
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+  ],
+  bookReviews: [
+    {
+      id: "f1n92gXb60A",
+    },
+    {
+      id: "AYk_sSg_N-U",
+    },
+  ],
+  videoEssays: [
+    {
+      id: "wV0w2h_Tq3E",
+    },
+    {
+      id: "mgAnCuhyKiM",
     },
   ],
 };
