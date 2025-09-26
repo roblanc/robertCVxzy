@@ -129,9 +129,6 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
-                </div>
 <h4 className="text-3xl font-bold tracking-tighter sm:text-5xl">Check out my latest work</h4>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
@@ -170,9 +167,6 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Book Reviews
-                </div>
 <h4 className="text-3xl font-bold tracking-tighter sm:text-5xl">I read a lot of books</h4>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I enjoy reading books and sharing my thoughts on them. Here are some of my book reviews.
@@ -198,9 +192,6 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  I make video essays
-                </div>
 <h4 className="text-3xl font-bold tracking-tighter sm:text-5xl">I make video essays</h4>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I create videos about technology, philosophy, and culture. Here are some of my favorites.
