@@ -1,4 +1,4 @@
-import "server-only";
+
 
 export async function getYoutubeVideoStatistics(id: string) {
   if (!process.env.YOUTUBE_API_KEY) {

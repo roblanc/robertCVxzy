@@ -1,16 +1,12 @@
 
 "use client";
 
-import { getYoutubeVideoStatistics } from "@/lib/youtube";
 import { PlayIcon } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
-interface Props {
-  id: string;
-}
+import { useState } from "react";
 
 type Video = {
+  id: string;
   snippet: {
     title: string;
     thumbnails: {
@@ -25,18 +21,8 @@ type Video = {
   };
 };
 
-export function YoutubeEmbed({ id }: Props) {
-  const [video, setVideo] = useState<Video | null>(null);
+export function YoutubeEmbed({ video }: { video: Video | null }) {
   const [isPlaying, setIsPlaying] = useState(false);
-
-  useEffect(() => {
-    const fetchVideo = async () => {
-      const videoData = await getYoutubeVideoStatistics(id);
-      setVideo(videoData);
-    };
-
-    fetchVideo();
-  }, [id]);
 
   if (!video) {
     return (
@@ -52,7 +38,7 @@ export function YoutubeEmbed({ id }: Props) {
     <div className="group relative w-full cursor-pointer overflow-hidden rounded-lg">
       {isPlaying ? (
         <iframe
-          src={`https://www.youtube.com/embed/${id}?autoplay=1`}
+          src={`https://www.youtube.com/embed/${video.id}?autoplay=1`}
           title={video.snippet.title}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

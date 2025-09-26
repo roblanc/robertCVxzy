@@ -289,16 +289,19 @@ export default function Page() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {VIDEOS.map((video, id) => (
-              <BlurFade
-                key={video.id}
-                delay={BLUR_FADE_DELAY * 18 + id * 0.05}
-              >
-                <YoutubeEmbed
-                  id={video.id}
-                />
-              </BlurFade>
-            ))}
+            {await Promise.all(VIDEOS.map(async (video, id) => {
+              const videoData = await getYoutubeVideoStatistics(video.id);
+              return (
+                <BlurFade
+                  key={video.id}
+                  delay={BLUR_FADE_DELAY * 18 + id * 0.05}
+                >
+                  <YoutubeEmbed
+                    video={videoData}
+                  />
+                </BlurFade>
+              );
+            }))}
           </div>
         </div>
       </section>
