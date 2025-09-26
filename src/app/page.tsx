@@ -1,4 +1,4 @@
-import { getYoutubeVideoStatistics } from "@/lib/youtube";
+
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -25,20 +25,7 @@ interface HackathonProject {
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default async function Page() {
-  const videoEmbeds = await Promise.all(VIDEOS.map(async (video, id) => {
-    const videoData = await getYoutubeVideoStatistics(video.id);
-    return (
-      <BlurFade
-        key={video.id}
-        delay={BLUR_FADE_DELAY * 18 + id * 0.05}
-      >
-        <YoutubeEmbed
-          video={videoData}
-        />
-      </BlurFade>
-    );
-  }));
+export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -303,7 +290,14 @@ export default async function Page() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {videoEmbeds}
+            {VIDEOS.map((video, id) => (
+              <BlurFade
+                key={video.id}
+                delay={BLUR_FADE_DELAY * 18 + id * 0.05}
+              >
+                <YoutubeEmbed id={video.id} />
+              </BlurFade>
+            ))}
           </div>
         </div>
       </section>
