@@ -143,7 +143,7 @@ export default function Page() {
 
       <section id="orbiting-circles">
         <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
-          <OrbitingCircles iconSize={40}>
+          <OrbitingCircles iconSize={40} radius={144}>
             <Icons.whatsapp />
             <Icons.notion />
             <Icons.openai />
@@ -154,7 +154,7 @@ export default function Page() {
             <Icons.zapier />
             <Icons.python />
           </OrbitingCircles>
-          <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
+          <OrbitingCircles iconSize={30} radius={90} reverse speed={2}>
             <Icons.whatsapp />
             <Icons.notion />
             <Icons.openai />
