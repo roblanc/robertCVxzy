@@ -1,7 +1,8 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { ResumeData } from "@/lib/types";
 
-export const DATA = {
+export const DATA: ResumeData = {
   // Dummy comment to force recompilation
   name: "Robert Dumitriu",
   initials: "RDD",
