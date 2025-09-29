@@ -26,6 +26,7 @@ interface Props {
     href: string;
   }[];
   className?: string;
+  active?: boolean;
 }
 
 export function ProjectCard({
@@ -39,6 +40,7 @@ export function ProjectCard({
   video,
   links,
   className,
+  active,
 }: Props) {
   return (
     <Card
@@ -72,7 +74,10 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <div className="flex items-center gap-3">
+            <CardTitle className="mt-1 text-base">{title}</CardTitle>
+            {!active && <Badge variant="secondary">Retired</Badge>}
+          </div>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
