@@ -117,6 +117,20 @@ export default function Page() {
           </>
         }
       />
+      <BlurFadeText
+        className="max-w-[600px] md:text-xl mx-auto text-center"
+        delay={BLUR_FADE_DELAY + 0.10}
+        text={
+          <>
+            I write a newsletter called{" "}
+            <Highlighter action="highlight" color="#ADD8E6">
+              <Link href="https://linkincubator.substack.com/" target="_blank">
+                Link Incubator
+              </Link>
+            </Highlighter>
+          </>
+        }
+      />
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
