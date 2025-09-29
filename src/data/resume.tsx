@@ -106,7 +106,7 @@ export const DATA = {
       start: "2015",
       end: "20016",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+        "During my internship at PTC Eastern Europe, I supported the marketing and partner enablement teams by assisting with digital campaigns, content creation, and event coordination. I helped organize webinars and workshops, contributed to drafting internal and external communications, and gained hands-on experience with tools like Salesforce and LMS platforms. The role gave me early exposure to how global marketing operations work in practice, from managing partner communications to supporting technical content delivery, and it laid the foundation for my later full-time role at PTC.",
     },
   ],
   education: [
