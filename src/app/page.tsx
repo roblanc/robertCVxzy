@@ -136,13 +136,13 @@ export default function Page() {
         delay={BLUR_FADE_DELAY + 0.15}
         text={
           <>
-            I also enjoy writing technical white papers, and you can check a{" "}
+            I also enjoy writing{" "}
             <Highlighter action="highlight" color="#ADD8E6">
               <Link href="/Prompt Engineering The New Business Logic_Robert Daniel Dumitriu.pdf" target="_blank">
-                sample of my work: Prompt Engineering, The New Business Logic
+                white papers
               </Link>
-            </Highlighter>{" "}
-            here.
+            </Highlighter>
+            .
           </>
         }
       />
