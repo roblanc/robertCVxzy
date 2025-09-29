@@ -184,7 +184,8 @@ export const DATA: ResumeData = {
         },
       ],
       image: "/microlecturi.png",
-      video: "",
+      video:
+        "/microlecturi.mp4",
     },
   ],
   bookReviews: [
