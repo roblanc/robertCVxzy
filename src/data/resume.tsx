@@ -91,10 +91,10 @@ export const DATA = {
       location: "Bucharest, RO",
       title: "Software Marketing Global Specialist",
       logoUrl: "/PTC.svg",
-      start: "January 2016",
-      end: "April 2020",
+      start: "2016",
+      end: "2020",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "I worked at PTC Eastern Europe as a Global Marketing & Communications Specialist, where I focused on digital enablement and partner success. I delivered 50+ global webinars, redesigned UX flows to improve user engagement, and managed LMS platforms to scale training programs. I also wrote and distributed a newsletter for 200,000+ subscribers, produced technical content, collaborated with Agile teams, and optimized Salesforce pipelines to streamline partner management. In this role, I sat at the intersection of marketing, technology, and operations, making sure both internal teams and external partners had the tools, training, and communication needed to perform effectively.",
     },
     {
       company: "PTC",
