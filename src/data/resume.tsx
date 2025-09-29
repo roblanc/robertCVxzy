@@ -227,18 +227,8 @@ export const DATA = {
       dates: "April 2023 - March 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "Built Papyrus.ink, a service that delivers 500+ literary classics in digestible email chunks with a personalized reading cadence and retro 8‑bit cover art, making it effortless to fit quality literature into daily routines.",
+      technologies: ["Python", "Flask", "Crom", "CSS", "JavaScript", "HTML", "CSS", "Figma"],
       links: [
         {
           type: "Website",
