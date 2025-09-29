@@ -168,6 +168,24 @@ export const DATA: ResumeData = {
       video:
         "/medidatiianunturi.mp4",
     },
+    {
+      title: "MicroLecturi.ro",
+      href: "https://www.reddit.com/r/bucuresti/comments/1awefyj/cite%C8%99te_pentru_bac_direct_pe_email/",
+      dates: "2023 - Present",
+      active: true,
+      description:
+        "A simple reading companion for the BAC: subscribe to curated Romanian literature, get daily or weekly bite-size emails, and turn “dead time” (commute, breaks) into steady progress—100% free.",
+      technologies: ["Python", "Flask", "Cron", "CSS", "JavaScript", "HTML", "CSS", "Figma"],
+      links: [
+        {
+          type: "Reddit Post",
+          href: "https://www.reddit.com/r/bucuresti/comments/1awefyj/cite%C8%99te_pentru_bac_direct_pe_email/",
+          icon: <Icons.x className="size-3" />,
+        },
+      ],
+      image: "/microlecturi.png",
+      video: "",
+    },
   ],
   bookReviews: [
     {
