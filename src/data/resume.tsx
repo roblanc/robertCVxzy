@@ -222,8 +222,8 @@ export const DATA = {
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
+      title: "Papyrus.ink",
+      href: "#",
       dates: "April 2023 - March 2024",
       active: true,
       description:
@@ -242,13 +242,13 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "/papyrusink.mp4",
     },
   ],
   bookReviews: [
