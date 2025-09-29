@@ -133,7 +133,12 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY + 0.05}
                   text={
                     <>
-                      I am passionate about <Highlighter action="highlight" color="#ADD8E6">building innovative solutions</Highlighter>.
+                      You can check my writing on{" "}
+                      <Highlighter action="highlight" color="#ADD8E6">
+                        <Link href="https://robertus.xyz" target="_blank">
+                          robertus.xyz
+                        </Link>
+                      </Highlighter>
                     </>
                   }
                 />
