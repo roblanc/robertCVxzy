@@ -131,6 +131,21 @@ export default function Page() {
           </>
         }
       />
+      <BlurFadeText
+        className="max-w-[600px] md:text-xl mx-auto text-center"
+        delay={BLUR_FADE_DELAY + 0.15}
+        text={
+          <>
+            I also enjoy writing technical white papers, and you can check a{" "}
+            <Highlighter action="highlight" color="#ADD8E6">
+              <Link href="/Prompt Engineering The New Business Logic_Robert Daniel Dumitriu.pdf" target="_blank">
+                sample of my work
+              </Link>
+            </Highlighter>{" "}
+            here.
+          </>
+        }
+      />
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
