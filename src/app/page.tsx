@@ -5,6 +5,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { YoutubeEmbed } from "@/components/youtube-embed";
+import { Highlighter } from "@/components/ui/highlighter";
 import { CoolMode } from "@/components/ui/cool-mode";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -42,6 +43,15 @@ export default function Page() {
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
+              />
+              <BlurFadeText
+                className="max-w-[600px] md:text-xl"
+                delay={BLUR_FADE_DELAY + 0.05}
+                text={
+                  <>
+                    I am passionate about <Highlighter action="highlight" color="#ADD8E6">building innovative solutions</Highlighter>.
+                  </>
+                }
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
