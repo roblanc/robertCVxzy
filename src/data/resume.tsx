@@ -149,6 +149,25 @@ export const DATA: ResumeData = {
       video:
         "/papyrusink.mp4",
     },
+    {
+      title: "Meditatii Anunturi",
+      href: "https://meditatiianunturi.ro",
+      dates: "2025",
+      active: true,
+      description:
+        "A modern platform that connects students with trusted tutors across Romania—complete with subjects, profiles, pricing, and easy contact in one place.",
+      technologies: ["Javascript", "AWS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://meditatiianunturi.ro",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "/medidatiianunturi.mp4",
+    },
   ],
   bookReviews: [
     {
