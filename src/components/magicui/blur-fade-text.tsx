@@ -32,9 +32,9 @@ const BlurFadeText = ({
     visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
   };
   const combinedVariants = variant || defaultVariants;
-  const characters = useMemo(() => Array.from(text), [text]);
+  const characters = useMemo(() => (typeof text === 'string' ? Array.from(text) : []), [text]);
 
-  if (animateByCharacter) {
+  if (animateByCharacter && typeof text === 'string') {
     return (
       <div className="flex">
         <AnimatePresence>
