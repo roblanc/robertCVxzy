@@ -6,6 +6,8 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { YoutubeEmbed } from "@/components/youtube-embed";
 import { Highlighter } from "@/components/ui/highlighter";
+import { OrbitingCircles } from "@/components/ui/orbiting-circles";
+import { Icons } from "@/components/icons";
 import { CoolMode } from "@/components/ui/cool-mode";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -136,6 +138,24 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="orbiting-circles">
+        <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
+          <OrbitingCircles iconSize={40}>
+            <Icons.whatsapp />
+            <Icons.notion />
+            <Icons.openai />
+            <Icons.googleDrive />
+            <Icons.whatsapp />
+          </OrbitingCircles>
+          <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
+            <Icons.whatsapp />
+            <Icons.notion />
+            <Icons.openai />
+            <Icons.googleDrive />
+          </OrbitingCircles>
         </div>
       </section>
       <section id="projects">
