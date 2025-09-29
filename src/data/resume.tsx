@@ -183,7 +183,7 @@ export const DATA: ResumeData = {
           icon: <Icons.x className="size-3" />,
         },
       ],
-      image: "/microlecturi.png",
+      image: "",
       video:
         "/microlecturi.mp4",
     },
