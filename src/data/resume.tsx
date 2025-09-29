@@ -73,14 +73,14 @@ export const DATA = {
 
   work: [
     {
-      company: "Consultant",
+      company: "Digital Strategy & Automation Consultant",
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
-      title: "Bitcoin Protocol Engineer",
+      title: "Strategy, Systems & Enablement",
       logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      start: "2021",
+      end: "Present",
       description:
         "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
     },
