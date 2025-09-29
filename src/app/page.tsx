@@ -5,6 +5,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { YoutubeEmbed } from "@/components/youtube-embed";
+import { Highlighter } from "@/components/ui/highlighter";
 import { CoolMode } from "@/components/ui/cool-mode";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -36,7 +37,15 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={
+                  <>
+                    Hi, I'm{" "}
+                    <Highlighter action="highlight" color="#ADD8E6">
+                      {DATA.name.split(" ")[0]}
+                    </Highlighter>{" "}
+                    👋
+                  </>
+                }
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
