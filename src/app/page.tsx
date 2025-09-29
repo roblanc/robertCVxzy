@@ -151,9 +151,9 @@ export default function Page() {
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={90} reverse speed={2}>
             <Icons.n8n />
-            <Icons.googleSheets />
-            <Icons.javascript />
-            <Icons.python />
+            <Icons.notion />
+            <Icons.apple />
+            <Icons.googleDrive />
           </OrbitingCircles>
         </div>
       </section>
