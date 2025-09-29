@@ -148,13 +148,13 @@ export default function Page() {
             <Icons.notion />
             <Icons.openai />
             <Icons.googleDrive />
-            <Icons.whatsapp />
+            <Icons.github />
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
             <Icons.whatsapp />
             <Icons.notion />
             <Icons.openai />
-            <Icons.googleDrive />
+            <Icons.github />
           </OrbitingCircles>
         </div>
       </section>
