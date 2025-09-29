@@ -151,7 +151,7 @@ export default function Page() {
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={90} reverse speed={2}>
             <Icons.n8n />
-            <Icons.gemini />
+            <Icons.googleSheets />
             <Icons.javascript />
             <Icons.python />
           </OrbitingCircles>
