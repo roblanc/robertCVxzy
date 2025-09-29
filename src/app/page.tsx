@@ -9,7 +9,7 @@ import { Highlighter } from "@/components/ui/highlighter";
 import { CoolMode } from "@/components/ui/cool-mode";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { DATA } from "@/data/resume";
+import { RESUME_DATA as DATA } from "@/data/resume-data";
 import { VIDEOS } from "@/data/videos";
 import Link from "next/link";
 import Markdown from "react-markdown";
