@@ -150,6 +150,9 @@ export default function Page() {
             <Icons.googleDrive />
             <Icons.github />
             <Icons.n8n />
+            <Icons.photoshop />
+            <Icons.zapier />
+            <Icons.python />
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
             <Icons.whatsapp />
@@ -157,6 +160,9 @@ export default function Page() {
             <Icons.openai />
             <Icons.github />
             <Icons.n8n />
+            <Icons.photoshop />
+            <Icons.zapier />
+            <Icons.python />
           </OrbitingCircles>
         </div>
       </section>
