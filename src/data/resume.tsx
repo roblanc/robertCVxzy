@@ -133,7 +133,7 @@ export const DATA: ResumeData = {
     {
       title: "Papyrus.ink",
       href: "#",
-      dates: "April 2023 - March 2024",
+      dates: "2024 - 2025",
       active: true,
       description:
         "Built Papyrus.ink, a service that delivers 500+ literary classics in digestible email chunks with a personalized reading cadence and retro 8‑bit cover art, making it effortless to fit quality literature into daily routines.",
