@@ -103,6 +103,20 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <BlurFadeText
+        className="max-w-[600px] md:text-xl mx-auto text-center"
+        delay={BLUR_FADE_DELAY + 0.05}
+        text={
+          <>
+            You can check my writing on{" "}
+            <Highlighter action="highlight" color="#ADD8E6">
+              <Link href="https://robertus.xyz" target="_blank">
+                robertus.xyz
+              </Link>
+            </Highlighter>
+          </>
+        }
+      />
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -128,20 +142,6 @@ export default function Page() {
                   websites to complex web applications. Here are a few of my
                   favorites.
                 </p>
-                <BlurFadeText
-                  className="max-w-[600px] md:text-xl"
-                  delay={BLUR_FADE_DELAY + 0.05}
-                  text={
-                    <>
-                      You can check my writing on{" "}
-                      <Highlighter action="highlight" color="#ADD8E6">
-                        <Link href="https://robertus.xyz" target="_blank">
-                          robertus.xyz
-                        </Link>
-                      </Highlighter>
-                    </>
-                  }
-                />
               </div>
             </div>
           </BlurFade>
