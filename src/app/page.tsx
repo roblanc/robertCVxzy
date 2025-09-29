@@ -44,15 +44,6 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY + 0.05}
-                text={
-                  <>
-                    I am passionate about <Highlighter action="highlight" color="#ADD8E6">building innovative solutions</Highlighter>.
-                  </>
-                }
-              />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -137,6 +128,15 @@ export default function Page() {
                   websites to complex web applications. Here are a few of my
                   favorites.
                 </p>
+                <BlurFadeText
+                  className="max-w-[600px] md:text-xl"
+                  delay={BLUR_FADE_DELAY + 0.05}
+                  text={
+                    <>
+                      I am passionate about <Highlighter action="highlight" color="#ADD8E6">building innovative solutions</Highlighter>.
+                    </>
+                  }
+                />
               </div>
             </div>
           </BlurFade>
